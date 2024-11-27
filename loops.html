@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript loops</h1>
+<h2>loops</h2>
+<p id="Activity1"></p>
+<script>
+// create an array
+let loops = []
+for (let x=0; x<=15; x++) {
+    if (x === 0) {
+      //number is even 
+      console.log(x +  " is even");
+      loops.push(x +  " is even");
+    }
+    else if (x % 2 === 0) {
+      console.log(x + " is even");   
+      loops.push(x + " is even"); 
+    }
+    else {
+      //number is not even    
+      console.log(x + " is odd");
+      loops.push(x + " is odd");
+    }
+}
+//display Array
+document.getElementById("Activity1").innerHTML = loops;
+</script>
+</body>
+</html>
