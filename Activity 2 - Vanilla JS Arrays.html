@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Activity 2 - Vanilla JS Arrays</h1>
+<h2>Activity2</h2>
+<p id="Activity 2"></p>
+<script>
+
+function calculateAverage(arr) {
+    // create a variable for the sum and initialize it
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+let numbers = [20, 30, 25, 35, -16, 60, -100];
+let average = calculateAverage(numbers);
+//print average
+console.log(average); 
+
+//display Array
+document.getElementById("Activity 2").innerHTML = average;
+</script>
+</body>
+</html>
