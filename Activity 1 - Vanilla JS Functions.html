@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Activity 1 - Vanilla JS Function</h1>
+<p id="Activity 1"></p>
+<script>
+
+let numbers = [10, 2, 3, 4, 7];
+let max = numbers[0]; // initialize to the first value
+
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
+}
+
+console.log(max); 
+//display Array
+document.getElementById("Activity 1").innerHTML = max;
+</script>
+</body>
+</html>
