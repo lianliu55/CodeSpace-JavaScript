@@ -2,19 +2,20 @@
 <html> 
 <body>
 <h1>JavaScript loops</h1>
-<h2>loops</h2>
+<h2>Activity 2</h2>
 <p id="Loops2"></p>
 
 <script>
 const n = 6;
-let display = []
+let array = []
 for (let i = 1; i <= 10; i++){
    answer = n*i
    text = n + "x" + i + "=" + answer;
-   display.push(text)
+   array.push(text)
 }
 
-//display Array
+// display Array
+let display = array.join("</br>")
 document.getElementById("Loops2").innerHTML = display;
 </script>
 </body>

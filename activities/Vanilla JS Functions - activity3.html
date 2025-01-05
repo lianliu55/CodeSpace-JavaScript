@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Activity 3 - Vanilla JS Function</h1>
+<p id="Activity 3"></p>
+<script>
+
+function isPrime(num) {
+    let isprime=num==1? false:true;
+    // Go through every number from 2 onwards to see if can be divided by it
+    for(let i=2;i<num;i++){
+        num%i==0? isprime*=false :isprime*=true;
+    };
+    return isprime
+}
+
+number = window.prompt('Enter a number up to 1000');
+if (number > 1000) {
+    number = 1000
+}
+
+let prime = isPrime(number)
+console.log(prime); 
+
+//display Array
+if (prime) {
+    text = `${number} IS a prime number`
+} else {
+    text = `${number} is NOT a prime number`
+}
+
+document.getElementById("Activity 3").innerHTML = text
+</script>
+</body>
+</html>

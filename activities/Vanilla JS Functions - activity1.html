@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Activity 1 - Vanilla JS Function</h1>
+<p id="Activity 1"></p>
+<script>
+
+function calculateMax(arr) {
+    let max = arr[0]; // initialize to the first value
+
+    // replace if bigger than the stored value
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max
+}
+
+numbers = [10, 2, 3, 4, 7]
+let max = calculateMax(numbers)
+console.log(max); 
+
+//display Array
+document.getElementById("Activity 1").innerHTML = max;
+</script>
+</body>
+</html>

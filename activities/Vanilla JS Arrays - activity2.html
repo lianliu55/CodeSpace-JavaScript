@@ -9,18 +9,21 @@
 function calculateAverage(arr) {
     // create a variable for the sum and initialize it
     let sum = 0;
+    // sum up the array
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
+    // divide by the length to get the average
     return sum / arr.length;
 }
 
 let numbers = [20, 30, 25, 35, -16, 60, -100];
 let average = calculateAverage(numbers);
-//print average
+
+// print average
 console.log(average); 
 
-//display Array
+// display Array
 document.getElementById("Activity 2").innerHTML = average;
 </script>
 </body>

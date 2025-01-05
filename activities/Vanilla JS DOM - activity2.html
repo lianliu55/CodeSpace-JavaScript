@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    .form label {
+      display: inline-block;
+      width: 70px;
+    }
+
+    .form input, .form span {
+      margin-bottom: 5px;
+    }
+
+    .form button {
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 5px;
+      border: None;
+      padding: 12px;
+      border-radius: 5px;
+      color: white;
+      background-color: lightblue;
+
+    }
+  </style>
+</head>
+<html>
+<body>
+
+<h2><strong>Input radius value and get the volume of a sphere</strong></h2>
+
+<div class="form">
+  <div>
+    <label>Radius:</label>
+    <input id="radius" name="radius" type="number">
+  </div>
+  <div>
+    <label>Volume:</label>
+    <span id="volume"></span>
+  </div>
+  <div>
+    <button id="submit" onclick="calculateVolume()">Calculate</button>
+  </div>
+</div>
+
+<script>
+  function calculateVolume() {
+    form_radius = document.getElementById("radius");
+    radius = Number(form_radius.value)
+    let volume=4/3*3.14*radius*radius*radius;
+    text = `${volume}`
+    document.getElementById("volume").innerHTML = text
+  }
+</script>
+
+</body>
+</html>
+
+
+

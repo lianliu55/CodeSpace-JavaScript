@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Vanilla JS Control Statements</h1>
+<p>Activity 2 - and the answer is ...</p>
+
+<p id="demo"></p>
+
+<script>
+  // Prompt user for three numbers
+  let a = prompt("Enter a number");
+  let b = prompt("Enter another number");
+  let c = prompt("And a last number please")
+
+  // Check if increasing, decreasing or neither
+  if (a < b && b < c){
+    // C greater than B which is greater than A
+    Text = (" Increasing Order");
+  } else if (a > b && b > c)   {
+    // C less than B which is less than A
+    Text = (" Decreasing Order");
+  } else {
+    Text = "Neither increasing or decreasing order" }
+
+  // Return the result
+  document.getElementById("demo").innerHTML = Text;
+</script>
+
+</body>
+</html>

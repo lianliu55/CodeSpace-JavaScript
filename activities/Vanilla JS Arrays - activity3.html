@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Activity 3 - Vanilla JS Arrays</h1>
+<h2>Activity3</h2>
+<p id="Activity 3"></p>
+<script>
+
+function calculateMax(arr) {
+    let max = numbers[0]; // initialize to the first value
+
+    // replace if bigger than the stored value
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
+    return max
+}
+
+function calculateMin(arr) {
+    let min = numbers[0]; // initialize to the first value
+
+    // replace if smaller than the stored value
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] < min) {
+            min = numbers[i];
+        }
+    }
+    return min
+}
+
+function createText(numbers, max, min) {
+    return `Original Array: ${numbers}<br>Maximum value for the above array = ${max}<br>Minimum value for the above array = ${min}`
+}
+
+let numbers = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+let maximum = calculateMax(numbers);
+let minimum = calculateMin(numbers);
+
+// display text
+document.getElementById("Activity 3").innerHTML = createText(numbers, maximum, minimum)
+</script>
+</body>
+</html>

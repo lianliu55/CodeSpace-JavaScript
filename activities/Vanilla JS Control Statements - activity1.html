@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Vanilla JS Control Statements</h1>
+<p>Activity 1 - and the answer is ...</p>
+
+<p id="demo"></p>
+
+<script>
+  // Prompt user for three numbers
+  let a = prompt("Enter a number");
+  let b = prompt("Enter another number");
+  let c = prompt("And a last number please")
+
+  // Check if equal or different
+  if (a == b == c) {
+    // check all the same
+    Text = "All numbers are equal";
+  } else if (a != b && b != c && c != a)   {
+    // A doesn't equal B which isn't the same as C and which also isn't the same as A
+    Text = "All numbers are different";
+  } else {
+    Text = "Neither all are equal or different"}
+
+  // Return the result
+  document.getElementById("demo").innerHTML = Text;
+</script>
+
+</body>
+</html>

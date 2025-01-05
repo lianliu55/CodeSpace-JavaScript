@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 1 - Vanilla JS DOM</title>
+        <style>
+            .textStyling {
+            color: blue;
+            font-size: 24px;
+            }
+        </style>
+    </head> 
+    <body>
+        <p id="text" style>Vanilla JS DOM</p> 
+        <div>
+        <button id="jsstyle"
+        onclick="js_style()">Style</button>
+        </div>
+
+        <script>
+        function js_style() {
+          document.getElementById("text").classList.add('textStyling')
+        }
+        </script>
+    </body>
+
+</html>
